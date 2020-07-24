@@ -10,7 +10,9 @@ const CircleSelector = (props) => (
         }}
         className={c ? "selected" : ""}
       >
-        {c ? "circle" + (idx + 1) + "selected" : "select" + (idx + 1) + "color"}
+        {c
+          ? "circle" + " " + (idx + 1) + " " + "selected"
+          : "select" + " " + "color" + " " + (idx + 1)}
       </button>
     ))}
   </div>
